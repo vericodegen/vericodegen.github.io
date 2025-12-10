@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+header h3 {
+    margin: 0;
+    color: #fff;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.speaker, .organizer {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.speaker img, .organizer img {
+    border-radius: 50%;
+    margin-right: 20px;
+    max-width: 150px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.speaker-info, .organizer-info {
+    max-width: calc(100% - 170px);
+}
+
+.speaker-info h3, .organizer-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.speaker-info p, .organizer-info p {
+    margin: 5px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .speaker, .organizer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .speaker img, .organizer img {
+        margin: 0 0 10px 0;
+    }
+
+    .speaker-info, .organizer-info {
+        max-width: 100%;
+    }
+}
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#goToTopBtn:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+}
