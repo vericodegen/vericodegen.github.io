@@ -25,21 +25,28 @@
         <article>
             <section id="home" class="Description">
                 <h2>Description</h2>
-                <p></p>
+                <p>LLM code assistants today are powerful but fundamentally untrustworthy: they hallucinate logic, mis-handle corner cases, and provide no guarantees. This workshop centers a different goal: <b>verifiable code generation</b>, where human-aligned agents collaborate with proof assistants, model checkers, SAT/SMT solvers, and static analyzers to co-design specifications, code, proofs, and heuristics with machine-checkable guarantees.</p>
 
-                <p>To tackle these challenges, this workshop seeks not only to  but also to build an active and interdisciplinary community at the intersection of . By bringing together researchers, practitioners, and domain experts, we aim to spark meaningful dialogue, initiate new collaborations, and create lasting connections that extend beyond the event itself. This raises a set of new questions:</p>
-                <ul style="list-style-type:none;">
+                <p>We argue that such agents must be built very differently from generic code LLMs. Verifiable generation requires rich specification languages (from contracts and types to temporal logics and proof terms), symbolic backends, and structured interaction loops where models propose artifacts and tools refute, repair, or certify them. Beyond code, these agents must support <b>autoformalization</b> of informal requirements and mathematics, <b>proof search</b> for complex verification conditions, and <b>heuristic discovery</b>, e.g., invariants, lemma libraries, and solver strategies, that amplify classical formal-methods tools.</p>
+
+                <p>We will highlight opportunities and hard problems unique to this setting: aligning learned models with human intent expressed as specs and proofs; orchestrating multi-agent toolchains that mix neural search with symbolic reasoning; scaling autoformalization beyond toy examples; designing training signals from compiler, verifier, or theorem-prover feedback; and building evaluation protocols that track end-to-end guarantees, not just pass@k. The goal is a roadmap toward collaborative agents that help humans understand, control, and verify the software and systems they generate.</p>
+                <!-- <ul style="list-style-type:none;">
                     <li><strong>Q1:</strong> <em>How to ?</em></li>
                     <li><strong>Q2:</strong> <em>How to ?</em></li>
                     <li><strong>Q3:</strong> <em>How to ?</em></li>
-                  </ul>
+                </ul> -->
             </section>
 
             <section id="topics" class="Topics">
                 <h2>Topics</h2>
-                <p>In this workshop, we aim to bring together experts from  and , spur discussions, and foster collaborations on broad and transformative questions and challenges (include but not limited to):</p>
+                <p>This workshop brings together researchers in LLMs, formal methods, programming languages, and HCI to discuss questions including (but not limited to):</p>
                 <ul>
-                    <li>?</li>
+                    <li><b>Foundations and Architectures</b>: Neuro-symbolic loops; verifier-in-the-loop training; multi-agent systems for code + proof.</li>
+                    <li><b>Autoformalization and Specs</b>: From natural language and examples to contracts, types, and proof obligations; correctness and faithfulness criteria.</li>
+                    <li><b>Proof, Search, and Inference</b>: LLM-guided interactive theorem proving; certified repair; verified refactoring and migration.</li>
+                    <li><b>Heuristics and Invariants</b>: Learning loop invariants, lemmas, and solver strategies; optimizing verification backends with LLM-designed heuristics.</li>
+                    <li><b>Human Alignment and UX</b>: Interfaces for mixed-initiative spec and proof development; explanations, debugging, and trust calibration.</li>
+                    <li><b>Benchmarks, Safety, and Applications</b>: Datasets, metrics, and case studies in critical domains (infrastructure, hardware, autonomy, scientific computing).</li>
                 </ul>
             </section>
 
