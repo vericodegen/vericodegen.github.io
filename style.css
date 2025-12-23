@@ -60,6 +60,13 @@ header h3 {
     flex-shrink: 0;
 }
 
+.sponsor img {
+    margin-right: 20px;
+    /* max-width: 150px; */
+    height: 80px;
+    flex-shrink: 0;
+}
+
 .speaker-info, .organizer-info {
     max-width: calc(100% - 170px);
 }
