@@ -63,7 +63,7 @@ header h3 {
 .sponsor img {
     margin-right: 20px;
     /* max-width: 150px; */
-    height: 80px;
+    height: 100px;
     flex-shrink: 0;
 }
 
