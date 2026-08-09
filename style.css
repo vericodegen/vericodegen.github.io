@@ -78,6 +78,57 @@ header h3 {
     margin-bottom: 0;
 }
 
+.challenge-tracks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 22px 0 0;
+}
+
+.challenge-track {
+    padding: 16px 18px;
+    border: 1px solid #cfe0f5;
+    border-radius: 4px;
+    background: #f5f9ff;
+}
+
+.challenge-track-tag {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #007bff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.challenge-track h4 {
+    margin: 0 0 5px;
+    color: #333;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.challenge-track p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.challenge-group-label {
+    margin: 20px 0 0;
+    color: #777;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.challenge-group-label + .challenge-metrics {
+    margin-top: 12px;
+}
+
 .challenge-metrics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -198,7 +249,8 @@ footer {
         font-size: 1.4rem;
     }
 
-    .challenge-metrics {
+    .challenge-metrics,
+    .challenge-tracks {
         grid-template-columns: 1fr;
     }
 

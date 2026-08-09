@@ -268,9 +268,23 @@
                 <div class="challenge-card">
                     <div class="challenge-copy">
                         <h3 class="challenge-question">Can agents make Lean proofs better, not just correct?</h3>
-                        <p>The <b>Lean Refactor Arena</b> is a challenge in verified proof refactoring. Participants build agents that improve existing Lean 4 proofs while preserving their theorem statements and correctness.</p>
+                        <p>The <b>Lean Refactor Arena</b> is a two-track competition in verified proof refactoring. Participants build systems that rewrite existing Lean 4 proofs — drawn from active formalization projects and competition mathematics — while preserving their theorem statements and correctness.</p>
                     </div>
 
+                    <div class="challenge-tracks" aria-label="Competition tracks">
+                        <div class="challenge-track">
+                            <span class="challenge-track-tag">Track 1</span>
+                            <h4>Closed-source LLM</h4>
+                            <p>Build a harness around closed-source frontier LLM APIs, under a fixed per-problem API budget.</p>
+                        </div>
+                        <div class="challenge-track">
+                            <span class="challenge-track-tag">Track 2</span>
+                            <h4>Open-source LLM</h4>
+                            <p>Post-train open-source models, build a harness around them, or both, under a fixed compute budget.</p>
+                        </div>
+                    </div>
+
+                    <p class="challenge-group-label">Scored on three dimensions:</p>
                     <div class="challenge-metrics" aria-label="Challenge evaluation dimensions">
                         <div class="challenge-metric">
                             <h4>Proof size</h4>
@@ -282,13 +296,13 @@
                         </div>
                         <div class="challenge-metric">
                             <h4>Zero-shot version transfer</h4>
-                            <p>Keep the same proof compiling across newer Lean toolchains.</p>
+                            <p>Keep the same proof compiling across other Lean toolchains.</p>
                         </div>
                     </div>
 
                     <div class="challenge-footer">
-                        <p>The benchmark brings together a range of Lean theorem-proving tasks. Submit refactored proofs through the Arena to join the public leaderboard.</p>
-                        <a class="challenge-button" href="https://huggingface.co/spaces/delta-lab-ai/lean-refactor-arena" target="_blank" rel="noopener noreferrer">Explore the Lean Refactor Arena <span aria-hidden="true">&rarr;</span></a>
+                        <p>Each track's winner receives a prize and a dedicated talk at the workshop. The warm-up benchmark and public leaderboard are live now; see the Arena site for rules, data, and submission details.</p>
+                        <a class="challenge-button" href="https://leanrefactor.github.io/" target="_blank" rel="noopener noreferrer">Explore the Lean Refactor Arena <span aria-hidden="true">&rarr;</span></a>
                     </div>
                 </div>
             </section>
