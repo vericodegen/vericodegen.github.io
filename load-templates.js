@@ -1,18 +1,24 @@
 function loadHTML(elementId, filePath) {
-    fetch(filePath)
+    return fetch(filePath)
         .then(response => response.text())
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
-            if (elementId === 'footer') {
-                // Ensure we scroll to top after loading all dynamic content
-                window.scrollTo(0, 0);
-            }
         });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    window.scrollTo(0, 0);  // Ensure scroll to top on page load
-    loadHTML('header', 'header.html');
-    loadHTML('navbar', 'navbar.html');
-    loadHTML('footer', 'footer.html');
+    Promise.all([
+        loadHTML('header', 'header.html'),
+        loadHTML('navbar', 'navbar.html'),
+        loadHTML('footer', 'footer.html')
+    ]).then(() => {
+        // Only settle the scroll position once the dynamic content is in place,
+        // otherwise the injected header/navbar shift whatever we scrolled to.
+        const target = location.hash && document.getElementById(location.hash.slice(1));
+        if (target) {
+            target.scrollIntoView();
+        } else {
+            window.scrollTo(0, 0);
+        }
+    });
 });
