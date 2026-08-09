@@ -186,6 +186,37 @@ header h3 {
     text-decoration: underline;
 }
 
+.challenge-contribute {
+    margin-top: 22px;
+    padding: 16px 18px;
+    border: 1px solid #cfe0f5;
+    border-radius: 4px;
+    background: #f5f9ff;
+}
+
+.challenge-contribute-title {
+    margin: 0 0 7px;
+    color: #333;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.challenge-contribute p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.challenge-contribute p + p {
+    margin-top: 10px;
+}
+
+.challenge-contribute-cta .challenge-button {
+    margin-left: 4px;
+    font-size: 0.9rem;
+}
+
 .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
