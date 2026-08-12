@@ -217,6 +217,72 @@ header h3 {
     font-size: 0.9rem;
 }
 
+code {
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #f0f3f7;
+    color: #26517f;
+    font-size: 0.85em;
+}
+
+/* template / formatting callouts (Call for Papers + Challenge) */
+.format-note {
+    margin: 20px 0;
+    padding: 16px 18px;
+    border: 1px solid #cfe0f5;
+    border-radius: 4px;
+    background: #f5f9ff;
+}
+
+.format-note-title {
+    margin: 0 0 7px;
+    color: #333;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.format-note p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.format-note p + p {
+    margin-top: 10px;
+}
+
+.format-note code {
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #e7effa;
+    color: #26517f;
+    font-size: 0.85em;
+}
+
+.format-note p.format-note-warn {
+    padding: 9px 12px;
+    border-left: 3px solid #c0261b;
+    border-radius: 3px;
+    background: #fdf2f1;
+    color: #8f2119;
+}
+
+.format-note-warn b {
+    color: #c0261b;
+}
+
+.format-note-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 26px;
+    margin-top: 13px;
+}
+
+.format-note-actions .challenge-button {
+    font-size: 0.9rem;
+}
+
 .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
