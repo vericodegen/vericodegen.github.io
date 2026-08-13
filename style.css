@@ -217,6 +217,75 @@ header h3 {
     font-size: 0.9rem;
 }
 
+.Sponsors {
+    margin: 35px 0;
+}
+
+.prospectus-embed {
+    margin-top: 22px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.prospectus-embed object {
+    display: block;
+    width: 100%;
+    height: 85vh;
+    min-height: 520px;
+    border: 0;
+}
+
+.prospectus-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+    padding: 12px 16px;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.prospectus-actions span {
+    flex: 1;
+    color: #777;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+}
+
+.prospectus-actions .challenge-button {
+    font-size: 0.9rem;
+}
+
+.prospectus-fallback {
+    margin: 0;
+    padding: 40px 20px;
+    color: #555;
+    font-size: 0.93rem;
+    text-align: center;
+}
+
+.prospectus-mobile-cta {
+    display: none;
+    margin-top: 22px;
+    padding: 16px 18px;
+    border: 1px solid #cfe0f5;
+    border-radius: 4px;
+    background: #f5f9ff;
+}
+
+.prospectus-mobile-cta p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.prospectus-mobile-cta .challenge-contribute-cta {
+    margin-top: 10px;
+}
+
 .people-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -240,11 +309,18 @@ header h3 {
     flex-shrink: 0;
 }
 
+.sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
 .sponsor img {
-    margin-right: 20px;
-    /* max-width: 150px; */
+    max-width: 100%;
     height: 100px;
-    flex-shrink: 0;
+    object-fit: contain;
+    object-position: left center;
 }
 
 .speaker-info, .organizer-info {
@@ -293,6 +369,14 @@ footer {
 
     .challenge-button {
         justify-content: center;
+    }
+
+    .prospectus-embed {
+        display: none;
+    }
+
+    .prospectus-mobile-cta {
+        display: block;
     }
 
     .people-grid {
