@@ -398,6 +398,27 @@ header h3 {
     margin: 35px 0;
 }
 
+.sponsor-tier-heading {
+    padding: 10px 14px;
+    border-left: 6px solid;
+    border-radius: 4px;
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.sponsor-tier-heading--gold {
+    color: #5c4300;
+    border-left-color: #c69214;
+    background: #fff5d6;
+}
+
+.sponsor-tier-heading--silver {
+    color: #3f464d;
+    border-left-color: #8b949e;
+    background: #eef1f4;
+}
+
 .prospectus-embed {
     margin-top: 22px;
     border: 1px solid #ddd;
@@ -559,11 +580,27 @@ code {
     gap: 20px;
 }
 
-.sponsor img {
+.sponsor-logo {
     max-width: 100%;
-    height: 100px;
+    height: auto;
     object-fit: contain;
     object-position: left center;
+}
+
+.sponsor-logo--logical-intelligence {
+    width: 225px;
+}
+
+.sponsor-logo--pramaana-labs {
+    width: 260px;
+}
+
+.sponsor-logo--reasonable {
+    width: 310px;
+}
+
+.sponsor-logo--harmonic {
+    width: 280px;
 }
 
 .speaker-info, .organizer-info {
