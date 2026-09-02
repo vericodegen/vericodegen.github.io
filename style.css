@@ -67,6 +67,48 @@ header h3 {
     max-width: 850px;
 }
 
+.Challenge .challenge-card {
+    padding: 0;
+    border-color: #d8e0e8;
+    background: #fff;
+    overflow: hidden;
+}
+
+.Challenge .challenge-copy {
+    max-width: none;
+    padding: 24px;
+    border-bottom: 1px solid #d8e0e8;
+    background: #fafafa;
+}
+
+.challenge-section-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0;
+    padding: 22px 24px 0;
+}
+
+.challenge-section-heading-spaced {
+    margin-top: 4px;
+    border-top: 1px solid #e5e8eb;
+}
+
+.challenge-section-heading h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.challenge-section-heading p {
+    margin: 0;
+    color: #777;
+    font-size: 0.86rem;
+    text-align: right;
+}
+
 .challenge-question {
     margin: 0 0 15px;
     color: #333;
@@ -82,14 +124,37 @@ header h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin: 22px 0 0;
+    margin: 14px 24px 24px;
 }
 
 .challenge-track {
-    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
     border: 1px solid #cfe0f5;
     border-radius: 4px;
     background: #f5f9ff;
+}
+
+.challenge-track-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.challenge-track-number {
+    display: inline-flex;
+    flex: 0 0 34px;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #007bff;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .challenge-track-tag {
@@ -100,6 +165,10 @@ header h3 {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+}
+
+.challenge-track-heading .challenge-track-tag {
+    margin-bottom: 1px;
 }
 
 .challenge-track h4 {
@@ -114,6 +183,19 @@ header h3 {
     color: #555;
     font-size: 0.9rem;
     line-height: 1.45;
+}
+
+.challenge-track p.challenge-budget {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border-left: 3px solid #007bff;
+    background: #fff;
+    color: #333;
+    font-size: 0.88rem;
+}
+
+.challenge-budget strong {
+    color: #26517f;
 }
 
 .challenge-group-label {
@@ -133,12 +215,25 @@ header h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin: 22px 0;
+    margin: 14px 24px 24px;
 }
 
 .challenge-metric {
-    padding-left: 14px;
-    border-left: 3px solid #ccc;
+    position: relative;
+    padding: 16px 16px 16px 48px;
+    border: 1px solid #e1e5e9;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.challenge-metric-number {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    color: #8aa8c7;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 .challenge-metric h4 {
@@ -160,7 +255,7 @@ header h3 {
 }
 
 .challenge-timeline {
-    margin: 22px 0 0;
+    margin: 14px 24px 0;
     border: 1px solid #cfe0f5;
     border-radius: 4px;
     background: #fff;
@@ -213,7 +308,7 @@ header h3 {
 }
 
 .challenge-timeline-note {
-    margin: 10px 0 0;
+    margin: 10px 24px 0;
     color: #777;
     font-size: 0.83rem;
     line-height: 1.45;
@@ -223,8 +318,11 @@ header h3 {
     display: flex;
     align-items: center;
     gap: 28px;
-    padding-top: 22px;
-    border-top: 1px solid #ddd;
+    margin: 20px 24px 0;
+    padding: 18px;
+    border: 1px solid #cfe0f5;
+    border-radius: 4px;
+    background: #f5f9ff;
 }
 
 .challenge-footer p {
@@ -251,11 +349,26 @@ header h3 {
 }
 
 .challenge-contribute {
-    margin-top: 22px;
+    margin: 0;
     padding: 16px 18px;
     border: 1px solid #cfe0f5;
     border-radius: 4px;
     background: #f5f9ff;
+}
+
+.challenge-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+    gap: 18px;
+    margin: 14px 24px 24px;
+}
+
+.challenge-details .format-note {
+    margin: 0;
+}
+
+.challenge-details > * {
+    min-width: 0;
 }
 
 .challenge-contribute-title {
@@ -478,7 +591,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .challenge-card {
+    .Challenge .challenge-copy {
         padding: 20px;
     }
 
@@ -491,6 +604,44 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .challenge-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+        padding: 20px 20px 0;
+    }
+
+    .challenge-section-heading p {
+        text-align: left;
+    }
+
+    .challenge-tracks,
+    .challenge-metrics,
+    .challenge-details {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .challenge-details {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .challenge-details p,
+    .challenge-details a,
+    .challenge-details code {
+        overflow-wrap: anywhere;
+    }
+
+    .challenge-timeline {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .challenge-timeline-note {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
     .challenge-timeline-table th,
     .challenge-timeline-table td {
         padding: 10px 12px;
@@ -500,6 +651,8 @@ footer {
         align-items: stretch;
         flex-direction: column;
         gap: 18px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .challenge-button {

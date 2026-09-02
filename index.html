@@ -284,40 +284,65 @@
                 <h2>Challenge (Competition Track)</h2>
                 <div class="challenge-card">
                     <div class="challenge-copy">
+                        <span class="challenge-track-tag">Lean Refactor Arena</span>
                         <h3 class="challenge-question">Can agents make Lean proofs better, not just correct?</h3>
                         <p>The <b>Lean Refactor Arena</b> is a two-track competition in verified proof refactoring. Participants build systems that rewrite existing Lean 4 proofs — drawn from active formalization projects and competition mathematics — while preserving their theorem statements and correctness.</p>
                     </div>
 
+                    <div class="challenge-section-heading">
+                        <h3>Choose a track</h3>
+                        <p>Both tracks solve the same benchmark under different resource constraints.</p>
+                    </div>
                     <div class="challenge-tracks" aria-label="Competition tracks">
                         <div class="challenge-track">
-                            <span class="challenge-track-tag">Track 1</span>
-                            <h4>Closed-source LLM</h4>
-                            <p>Build a harness around closed-source frontier LLM APIs, under a fixed per-problem API budget.</p>
+                            <div class="challenge-track-heading">
+                                <span class="challenge-track-number" aria-hidden="true">1</span>
+                                <div>
+                                    <span class="challenge-track-tag">Track 1</span>
+                                    <h4>Closed-source LLM</h4>
+                                </div>
+                            </div>
+                            <p>Build a harness around closed-source frontier LLM APIs.</p>
+                            <p class="challenge-budget"><strong>Budget:</strong> &le; US$3 API spend per problem.</p>
                         </div>
                         <div class="challenge-track">
-                            <span class="challenge-track-tag">Track 2</span>
-                            <h4>Open-source LLM</h4>
-                            <p>Post-train open-source models, build a harness around them, or both, under a fixed compute budget.</p>
+                            <div class="challenge-track-heading">
+                                <span class="challenge-track-number" aria-hidden="true">2</span>
+                                <div>
+                                    <span class="challenge-track-tag">Track 2</span>
+                                    <h4>Open-source LLM</h4>
+                                </div>
+                            </div>
+                            <p>Post-train open-source models, build a harness around them, or both.</p>
+                            <p class="challenge-budget"><strong>Budget:</strong> must run on 4&times; 80 GB A100 &middot; &le; 48 h for the full benchmark.</p>
                         </div>
                     </div>
 
-                    <p class="challenge-group-label">Scored on three dimensions:</p>
+                    <div class="challenge-section-heading challenge-section-heading-spaced">
+                        <h3>How entries are scored</h3>
+                        <p>Every valid proof is evaluated on three complementary dimensions.</p>
+                    </div>
                     <div class="challenge-metrics" aria-label="Challenge evaluation dimensions">
                         <div class="challenge-metric">
+                            <span class="challenge-metric-number" aria-hidden="true">01</span>
                             <h4>Proof size</h4>
                             <p>Reduce proof-source token count compared with the reference proof.</p>
                         </div>
                         <div class="challenge-metric">
+                            <span class="challenge-metric-number" aria-hidden="true">02</span>
                             <h4>Elaboration efficiency</h4>
                             <p>Reduce the computational effort Lean uses to elaborate the proof.</p>
                         </div>
                         <div class="challenge-metric">
+                            <span class="challenge-metric-number" aria-hidden="true">03</span>
                             <h4>Zero-shot version transfer</h4>
                             <p>Keep the same proof compiling across other Lean toolchains.</p>
                         </div>
                     </div>
 
-                    <p class="challenge-group-label">Competition timeline:</p>
+                    <div class="challenge-section-heading challenge-section-heading-spaced">
+                        <h3>Competition timeline</h3>
+                    </div>
                     <div class="challenge-timeline">
                         <table class="challenge-timeline-table">
                             <thead>
@@ -363,23 +388,29 @@
                         <a class="challenge-button" href="https://leanrefactor.github.io/" target="_blank" rel="noopener noreferrer">Explore the Lean Refactor Arena <span aria-hidden="true">&rarr;</span></a>
                     </div>
 
-                    <div class="format-note">
-                        <span class="challenge-track-tag">Competition report</span>
-                        <h4 class="format-note-title">Every entry needs a tech report</h4>
-                        <p>Tech reports use the <b>competition</b> template (<em>not the one for the research paper track</em>): <code style="color: red;">neurips_2026_vericode_workshop_<b>competition</b>.tex</code> with <code style="color: red;">neurips_2026_vericode_<b>competition</b>.sty</code>, both in the same Overleaf project linked below. At least 4 pages, up to 9 pages, and submitted on OpenReview: <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/VERICODEGEN_Competition" target="_blank" rel="noopener noreferrer" style="color: red;">https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/<b>VERICODEGEN_Competition</b></a></p>
-                        <p>Tech reports are <b>single-blind</b>, so please do <b>not</b> anonymize them. We will invite Lean repository maintainers to review your submission and verify that it reproduces, which may involve contacting you directly. Include your real names, affiliations, and contact information so organizers can reach you about your code and submission during review.</p>
-                        <p class="format-note-warn"><b>Desk rejection:</b> a missing required section (Approach, Models, Budget, Reproduction), exceeding your track&rsquo;s budget, under-reporting what the run cost, not disclosing every model, or a run the organizers cannot repeat.</p>
-                        <div class="format-note-actions">
-                            <a class="challenge-button" href="https://www.overleaf.com/read/fhmwmtrgwkmc#4d5413" target="_blank" rel="noopener noreferrer">Open the report template on Overleaf <span aria-hidden="true">&rarr;</span></a>
-                            <a class="challenge-button" href="https://leanrefactor.github.io/" target="_blank" rel="noopener noreferrer">Full rules: Tracks &amp; Rules <span aria-hidden="true">&rarr;</span></a>
-                        </div>
+                    <div class="challenge-section-heading challenge-section-heading-spaced">
+                        <h3>Submission and participation</h3>
+                        <p>Prepare your entry, or help us expand the benchmark.</p>
                     </div>
+                    <div class="challenge-details">
+                        <div class="format-note">
+                            <span class="challenge-track-tag">Competition report</span>
+                            <h4 class="format-note-title">Every entry needs a tech report</h4>
+                            <p>Tech reports use the <b>competition</b> template (<em>not the one for the research paper track</em>): <code style="color: red;">neurips_2026_vericode_workshop_<b>competition</b>.tex</code> with <code style="color: red;">neurips_2026_vericode_<b>competition</b>.sty</code>, both in the same Overleaf project linked below. At least 4 pages, up to 9 pages, and submitted on OpenReview: <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/VERICODEGEN_Competition" target="_blank" rel="noopener noreferrer" style="color: red;">https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/<b>VERICODEGEN_Competition</b></a></p>
+                            <p>Tech reports are <b>single-blind</b>, so please do <b>not</b> anonymize them. We will invite Lean repository maintainers to review your submission and verify that it reproduces, which may involve contacting you directly. Include your real names, affiliations, and contact information so organizers can reach you about your code and submission during review.</p>
+                            <p class="format-note-warn"><b>Desk rejection:</b> a missing required section (Approach, Models, Budget, Reproduction), exceeding your track&rsquo;s budget, under-reporting what the run cost, not disclosing every model, or a run the organizers cannot repeat.</p>
+                            <div class="format-note-actions">
+                                <a class="challenge-button" href="https://www.overleaf.com/read/fhmwmtrgwkmc#4d5413" target="_blank" rel="noopener noreferrer">Open the report template on Overleaf <span aria-hidden="true">&rarr;</span></a>
+                                <a class="challenge-button" href="https://leanrefactor.github.io/" target="_blank" rel="noopener noreferrer">Full rules: Tracks &amp; Rules <span aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </div>
 
-                    <div class="challenge-contribute">
-                        <span class="challenge-track-tag">Grow the benchmark</span>
-                        <h4 class="challenge-contribute-title">How to contribute</h4>
-                        <p>The benchmark grows with the community. We are looking for more Lean proofs to refactor, and we would love your input. A good candidate problem is <b>long</b> (so there is room to shorten), <b>expensive to compile</b> (it burns heartbeats, so there is real search in the proof), and <b>stable across toolchains</b> (the declaration appears verbatim at several Lean snapshots).</p>
-                        <p class="challenge-contribute-cta">Maintain or know a Lean development with proofs like that? <a class="challenge-button" href="https://delta-lab-ai-lean-refactor-arena.hf.space/contribute" target="_blank" rel="noopener noreferrer">Read the contribution guide <span aria-hidden="true">&rarr;</span></a></p>
+                        <div class="challenge-contribute">
+                            <span class="challenge-track-tag">Grow the benchmark</span>
+                            <h4 class="challenge-contribute-title">How to contribute</h4>
+                            <p>The benchmark grows with the community. We are looking for more Lean proofs to refactor, and we would love your input. A good candidate problem is <b>long</b> (so there is room to shorten), <b>expensive to compile</b> (it burns heartbeats, so there is real search in the proof), and <b>stable across toolchains</b> (the declaration appears verbatim at several Lean snapshots).</p>
+                            <p class="challenge-contribute-cta">Maintain or know a Lean development with proofs like that? <a class="challenge-button" href="https://delta-lab-ai-lean-refactor-arena.hf.space/contribute" target="_blank" rel="noopener noreferrer">Read the contribution guide <span aria-hidden="true">&rarr;</span></a></p>
+                        </div>
                     </div>
                 </div>
             </section>
