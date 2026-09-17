@@ -587,6 +587,10 @@ code {
     object-position: left center;
 }
 
+.sponsor-logo--amazon {
+    width: 225px;
+}
+
 .sponsor-logo--logical-intelligence {
     width: 225px;
 }
@@ -597,6 +601,10 @@ code {
 
 .sponsor-logo--reasonable {
     width: 310px;
+}
+
+.sponsor-logo--renaissance {
+    width: 280px;
 }
 
 .sponsor-logo--harmonic {
