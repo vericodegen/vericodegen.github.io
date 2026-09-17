@@ -591,6 +591,27 @@ code {
     width: 225px;
 }
 
+.sponsor-with-name {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 150px;
+    max-width: 100%;
+    color: #222;
+    text-align: center;
+}
+
+.sponsor-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.sponsor-logo--aretta {
+    width: 95px;
+}
+
 .sponsor-logo--logical-intelligence {
     width: 225px;
 }
