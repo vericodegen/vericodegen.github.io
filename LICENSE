@@ -1,0 +1,70 @@
+This repository contains the website of VeriCodeGen: AI for Verifiable Coding,
+a NeurIPS 2026 workshop (https://vericodegen.github.io/).
+
+It is licensed in two parts:
+
+  1. Source code (HTML, CSS, JavaScript, build scripts) is licensed under the
+     MIT License, reproduced below.
+  2. Written content (workshop description, call for papers, guidelines, and
+     other text) is licensed under the Creative Commons Attribution 4.0
+     International License (CC BY 4.0).
+
+Some material is excluded from both licenses; see "Third-party material" below.
+
+===============================================================================
+Part 1: Source code
+===============================================================================
+
+MIT License
+
+Copyright (c) 2026 The VeriCodeGen Organizers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===============================================================================
+Part 2: Written content
+===============================================================================
+
+Copyright (c) 2026 The VeriCodeGen Organizers
+
+The written content of this website is licensed under the Creative Commons
+Attribution 4.0 International License. You may share and adapt it for any
+purpose, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+  "VeriCodeGen: AI for Verifiable Coding, NeurIPS 2026 Workshop,
+   https://vericodegen.github.io/, licensed under CC BY 4.0."
+
+===============================================================================
+Third-party material
+===============================================================================
+
+The following are NOT covered by either license above and remain the property
+of their respective owners:
+
+  - Photographs of speakers, panelists, and organizers.
+  - Sponsor names, logos, and trademarks.
+  - NeurIPS names, logos, and trademarks.
+  - LaTeX style files or templates derived from official NeurIPS style files,
+    which remain subject to their original terms.
+
+Permission to use any of the above must be obtained from its owner.
