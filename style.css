@@ -597,6 +597,10 @@ code {
     width: 225px;
 }
 
+.sponsor-logo--adacore {
+    width: 225px;
+}
+
 .sponsor-with-name {
     display: inline-flex;
     flex-direction: column;
